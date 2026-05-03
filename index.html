@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample Project Work</title>
+  <meta charset="UTF-8">
+  <title>Portfolio Projects</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
       background: #111;
-      color: #f5f5f5;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      margin: 0;
     }
     .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
     }
     .card {
+      margin: 30px 0;
+      padding: 15px;
       background: #1b1b1b;
-      border: 1px solid #2b2b2b;
-      border-radius: 16px;
-      padding: 18px;
-      margin: 20px 0 30px;
+      border-radius: 10px;
     }
     video, iframe {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      border: 0;
-      border-radius: 12px;
-      background: #000;
-    }
-    p {
-      color: #cfcfcf;
+      height: 450px;
+      border-radius: 10px;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Sample Project Work</h1>
-    <p>Two demo projects created for portfolio presentation.</p>
+<div class="container">
 
-    <div class="card">
-      <h2>Project 1 — Sample 3D Work</h2>
-      <p>A short sample project showing 3D presentation and interaction.</p>
-      <video controls preload="metadata">
-        <source src="Videos/sample-project.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+<h1>Sample Project Work</h1>
 
- <div class="card">
-  <h2>Project 2 — Unity Horror Scene</h2>
-  <p>A cinematic horror environment demo focused on lighting, mood, and camera movement.</p>
+<!-- LOCAL VIDEO -->
+<div class="card">
+  <h2>Project 1 — 3D Sample</h2>
+  <video controls>
+    <source src="Videos/sample-project.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- YOUTUBE VIDEO 1 -->
+<div class="card">
+  <h2>Project 2 — Horror Scene</h2>
   <iframe
     src="https://www.youtube.com/embed/D500JHclqxs"
+    frameborder="0"
     allowfullscreen>
   </iframe>
 </div>
 
+<!-- YOUTUBE VIDEO 2 -->
 <div class="card">
-  <h2>Project 3 — Unity Horror Scene (Editor View)</h2>
-  <p>Development view showcasing lighting setup, assets, and scene structure.</p>
+  <h2>Project 3 — Editor View</h2>
   <iframe
     src="https://www.youtube.com/embed/0_AX0Yn5bhc"
+    frameborder="0"
     allowfullscreen>
   </iframe>
+</div>
+
 </div>
 </body>
 </html>
